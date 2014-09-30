@@ -1417,19 +1417,6 @@ int spring_check(int x,int y)
 	return 0;
 
 }
-/*int stop_check(int x,int y)
-  {
-  int i;
-
-  for(i=0;i<10;i++)
-  {
-  if(x==stop1[i] && y==stop2[i])
-  return 1;
-  }
-  return 0;
-
-  }*/
-
 void drawCube(float x, float y, float z,float a) 
 {
 	glPushMatrix();
