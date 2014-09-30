@@ -126,122 +126,6 @@ int windowWidth;
 int windowHeight;
 GLfloat angle = 0.0; //set the angle of rotation
 
-/*class Tree{
-  public:
-  float x,y,z;
-  void drawcylinder(float x,float y,float z){
-  GLUquadricObj *quadratic;
-  quadratic = gluNewQuadric();
-  gluCylinder(quadratic,x,y,z,32,32);
-  }
-
-  void drawleaf(){
-  glPushMatrix();
-  glRotatef(-45,1.0,0.0,0.0);	
-  drawcylinder(0.2,0.4,2.0);
-  glTranslatef(0.0,0.0,2.0);
-  drawcylinder(0.4,0.1,1.0);
-//opposite side leaf
-glTranslatef(0.0,0.0,-2.0);
-glRotatef(90,1.0,0.0,0);	
-drawcylinder(0.2,0.4,2.0);
-glTranslatef(0.0,0.0,2.0);
-drawcylinder(0.4,0.1,1.0);
-glPopMatrix();
-}
-
-void drawendleaf(){
-glPushMatrix();	
-drawcylinder(0.2,0.5,2.5);
-glTranslatef(0.0,0.0,2.5);
-drawcylinder(0.5,0.1,1.5);
-glPopMatrix();
-}
-void drawbranch(){
-glPushMatrix();
-glColor3f(0.3, 0.1, 0.0);	//first part of leaf
-drawcylinder(0.2,0.2,4.0);
-glPushMatrix();	//leaves
-glTranslatef(0.0,0.0,1);	//go the place on the branch to draw the leaf
-glColor3f(0.0,0.3,0.0);	
-drawleaf();
-glPopMatrix();
-glPushMatrix();	//leaves
-glTranslatef(0.0,0.0,3.0);	//go the place on the branch to draw the leaf
-glColor3f(0.0,0.3,0.0);	
-drawleaf();
-glPopMatrix();
-glPushMatrix();	
-glColor3f(0.3, 0.1, 0.0);	//second part of leaf
-glTranslatef(0.0,0.0,4.0);
-glRotatef(-80,0.0,1.0,0.0);
-drawcylinder(0.2,0.2,5.0);
-glPushMatrix();	//leaves
-glTranslatef(0.0,0.0,1);	//go the place on the branch to draw the leaf
-glColor3f(0.0,0.3,0.0);	
-drawleaf();
-glPopMatrix();
-glPushMatrix();	//leaves
-glTranslatef(0.0,0.0,3.0);	//go the place on the branch to draw the leaf
-glColor3f(0.0,0.3,0.0);	
-drawleaf();
-glPopMatrix();
-glPushMatrix();	//leaves
-glTranslatef(0.0,0.0,5.0);	//go the place on the branch to draw the leaf
-glColor3f(0.0,0.3,0.0);	
-drawendleaf();
-glPopMatrix();
-glPopMatrix();
-glPopMatrix(); // for one branch
-}
-void drawTree () {	
-glPushMatrix();
-//person
-glTranslatef(x,y,z); 
-//glRotatef(30, 1.0, 0.0, 0.0); //rotate on the x axis
-glRotatef(90, 1.0, 0.0, 0.0); //rotate on the y axis
-glRotatef(angle, 0.0, 0.0, 1.0); //rotate on the z axis
-glRotatef(angle, 0.0, 1.0, 0.0); //rotate on the z axis
-glRotatef(angle, 1.0, 0.0, 0.0); //rotate on the z axis
-glColor3f(0.3, 0.1, 0.0);
-//for trunk
-//glTranslatef(0,0,5.4); 
-GLUquadricObj *quadratic1;
-quadratic1 = gluNewQuadric();
-gluCylinder(quadratic1,0.8f,2.5f,13.0f,32,32);
-glPushMatrix();	//start branches
-glRotatef(135,0,1.0,0.0); //rotate for branches
-drawbranch();
-glPopMatrix();	
-glPushMatrix();	//start branches
-glRotatef(60,0.0,0.0,1.0); //rotate for branches
-glRotatef(132,0,1.0,0.0); //rotate for branches	
-drawbranch();
-glPopMatrix();
-glPushMatrix();	//start branches
-glRotatef(120,0.0,0.0,1.0); //rotate for branches
-glRotatef(140,0,1.0,0.0); //rotate for branches	
-drawbranch();
-glPopMatrix();
-glPushMatrix();	//start branches
-glRotatef(180,0.0,0.0,1.0); //rotate for branches
-glRotatef(136,0,1.0,0.0); //rotate for branches	
-drawbranch();
-glPopMatrix();
-glPushMatrix();	//start branches
-glRotatef(240,0.0,0.0,1.0); //rotate for branches
-glRotatef(130,0,1.0,0.0); //rotate for branches	
-drawbranch();
-glPopMatrix();
-glPushMatrix();	//start branches
-glRotatef(300,0.0,0.0,1.0); //rotate for branches
-glRotatef(142,0,1.0,0.0); //rotate for branches	
-drawbranch();
-glPopMatrix();
-glPopMatrix();	//final pop
-}
-};
-*/
 class Human{
 	public:
 		GLUquadricObj * obj;
@@ -448,7 +332,6 @@ xxx3:
 		goto xxx3;
 	}
 	dog_z=0;
-	//alpha=acos( sqrt(0.5*g));
 	//T= (2*u_y )/g; // time of flight
 	//u=(2*g)/sin(2*alpha);
 	//printf("r[0]-%d r[1]-%d i-%d s[0]-%d s[1]-%d\n",r[0],r[1],i,s[0],s[1]);  
