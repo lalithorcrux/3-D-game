@@ -281,6 +281,7 @@ int main(int argc, char **argv) {
 xxx1:
 		xz1 = (rand()%21)-10;
 		xz2 = (rand()%21)-10;
+		
 		if(xz1==0 && xz2==0)
 		{
 			goto xxx1;
